@@ -108,10 +108,6 @@ The application uses browser's Local Storage for data persistence. This means:
 ## Contributing
 Feel free to fork this project and submit pull requests. You can also open issues for bugs or feature requests.
 
-## Creators
-- Nish
-- Gagz
-
 ## License
 © 2025 NESTIFY. All rights reserved.
 

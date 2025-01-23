@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestify - Todo List</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/todo.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Nestify</h1>
+            <nav class="nav-links">
+                <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
+                <a href="todo.html" class="active"><i class="fas fa-tasks icon"></i>To-Do List</a>
+                <a href="expense.html"><i class="fas fa-wallet icon"></i>Expense Tracker</a>
+                <a href="notes.html"><i class="fas fa-sticky-note icon"></i>Notes</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="todo-container">
+            <div class="page-container">
+                <h1><i class="fas fa-tasks"></i> To-Do List</h1>
+                <div class="todo-input">
+                    <input type="text" id="new-task" placeholder="What needs to be done?">
+                    <input type="date" id="due-date">
+                    <input type="time" id="due-time">
+                    <button id="add-task-button">
+                        <i class="fas fa-plus"></i> Add Task
+                    </button>
+                </div>
+                <ul id="task-list"></ul>
+                <a href="index.html" class="back-button">Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Nestify. Creators: Nish & Gagz:)</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestify - Notes</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/notes.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Nestify</h1>
+            <nav class="nav-links">
+                <a href="index.html"><i class="fas fa-home icon"></i>Home</a>
+                <a href="todo.html"><i class="fas fa-tasks icon"></i>To-Do List</a>
+                <a href="expense.html"><i class="fas fa-wallet icon"></i>Expense Tracker</a>
+                <a href="notes.html" class="active"><i class="fas fa-sticky-note icon"></i>Notes</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="notes-container">
+            <!-- Add Note Section -->
+            <section class="add-note-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-plus-circle"></i> Create New Note</h2>
+                </div>
+                <div class="note-form">
+                    <div class="form-group">
+                        <label for="note-heading">Title</label>
+                        <input type="text" id="note-heading" placeholder="Enter note title...">
+                    </div>
+                    <div class="form-group">
+                        <label for="note-content">Content</label>
+                        <textarea id="note-content" placeholder="Write your note here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Note Color</label>
+                        <div class="color-choices">
+                            <div class="color-option" data-color="#FFE2E2" style="background-color: #FFE2E2"></div>
+                            <div class="color-option" data-color="#E2F0FF" style="background-color: #E2F0FF"></div>
+                            <div class="color-option" data-color="#E2FFE2" style="background-color: #E2FFE2"></div>
+                            <div class="color-option" data-color="#FFE2FF" style="background-color: #FFE2FF"></div>
+                            <div class="color-option" data-color="#FFFFD4" style="background-color: #FFFFD4"></div>
+                            <div class="color-option" data-color="#E2FFFF" style="background-color: #E2FFFF"></div>
+                            <div class="color-option" data-color="#FFE5D4" style="background-color: #FFE5D4"></div>
+                            <div class="color-option" data-color="#E6E6FA" style="background-color: #E6E6FA"></div>
+                        </div>
+                    </div>
+                    <button onclick="saveNote()" class="note-submit-btn">
+                        <i class="fas fa-save"></i> Save Note
+                    </button>
+                </div>
+            </section>
+
+            <!-- Notes Display Section -->
+            <section class="notes-display-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-sticky-note"></i> Your Notes</h2>
+                    <div class="notes-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search notes..." id="search-notes">
+                    </div>
+                </div>
+                
+                <!-- No Notes Message -->
+                <p id="no-notes-message" class="notes-empty">
+                    <i class="fas fa-book"></i>
+                    <span>No notes yet. Create your first note above!</span>
+                </p>
+
+                <!-- Notes Grid -->
+                <div id="notes-list" class="notes-grid"></div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Nestify. Creators: Nish & Gagz:)</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/notes.js"></script>
+</body>
+</html>
